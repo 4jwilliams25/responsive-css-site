@@ -75,6 +75,7 @@ header {
   height: 430px;
   background: #cf0004 url(../images/banner_1200.jpg) no-repeat center bottom;
   position: relative;
+  background-size: 1200px 430px;
 }
 
 header a.logo {
@@ -427,7 +428,9 @@ footer a:hover {
   header {
     height: 300px;
     background-image: url(../images/banner_825.jpg);
+    background-size: 825px 300px;
   }
+
   div.hero {
     top: 120px;
     left: 48%;
@@ -514,6 +517,7 @@ footer a:hover {
     min-height: 160px;
     background-image: url(../images//banner_625.jpg);
     background-position: left top;
+    background-size: 640px 160px;
   }
   header a.logo {
     width: 125px;
@@ -666,13 +670,14 @@ footer a:hover {
     min-height: 125px;
     background-image: url(../images/banner_425.jpg);
     background-position: left bottom;
+    background-size: 425px 110px;
   }
 
   header a.logo {
-    height: 26px;
-    width: 126px;
-    background-image: url(../images/logo_small.svg);
+    height: 20px;
+    width: 124px;
     top: 15px;
+    background-size: 124px 51px;
   }
 
   header div.hero {
@@ -735,5 +740,36 @@ footer a:hover {
     margin: 0 0 10px 0;
     float: left;
     clear: both;
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-device-pixel-ratio: 2),
+  screen and (max-width: 1000px) and (-webkit-min-device-pixel-ration: 2) {
+  header {
+    background-image: url(../images/banner_1200_@2x.jpg);
+  }
+  section.atmostphere article {
+    background-image: url(../images/photo_lounge_@2x.jpg);
+  }
+}
+
+@media screen and (max-width: 825px) and (min-device-pixel-ratio: 2),
+  screen and (max-width: 825px) and (-webkit-min-device-pixel-ration: 2) {
+  header {
+    background-image: url(../images/banner_825_@2x.jpg);
+  }
+}
+
+@media screen and (max-width: 625px) and (min-device-pixel-ratio: 2),
+  screen and (max-width: 625px) and (-webkit-min-device-pixel-ration: 2) {
+  header {
+    background-image: url(../images/banner_625_@2x.jpg);
+  }
+}
+
+@media screen and (max-width: 425px) and (min-device-pixel-ratio: 2),
+  screen and (max-width: 425px) and (-webkit-min-device-pixel-ration: 2) {
+  header {
+    background-image: url(../images/banner_425_@2x.jpg);
   }
 }
